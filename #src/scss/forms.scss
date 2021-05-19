@@ -14,14 +14,23 @@
 	}
 }
 
-//</FORM>====================================================================================================
-
-//<BUTTONS (a.btn+tab)>====================================================================================================
 .btn {
+	background: #ff6464;
+	border-radius: 2px;
+	font-weight: 500;
+	font-size: 20px;
+	color: #fff;
+	line-height: 29/20 * 100%;
+	height: 47px;
 	display: inline-flex;
-	padding: 0px 0px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 0px 20px;
+	transition: background 0.3s ease 0s;
 	@media (min-width: 992px) {
 		&:hover {
+			background-color: #8f2121;
 		}
 	}
 	&._fw {
