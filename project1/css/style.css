@@ -1084,6 +1084,84 @@ body.ie ._ibg img {
   margin: 0 0 15px 0;
 }
 
+.featured-works {
+  padding: 30px 0 80px 0;
+}
+
+.featured-works__title {
+  margin: 0 0 20px 0;
+}
+
+.works__item {
+  padding: 0 0 30px 0;
+  margin: 0 0 30px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.works__item:last-child {
+  margin-bottom: 0;
+}
+
+.works__image {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 246px;
+          flex: 0 0 246px;
+  display: block;
+  border-radius: 6px;
+  min-height: 180px;
+  overflow: hidden;
+}
+
+.works__body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.works__title {
+  color: inherit;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 146.66667%;
+  margin: 0 0 15px 0;
+}
+
+.works__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 15px 0;
+}
+
+.works__year {
+  background: #142850;
+  border-radius: 16px;
+  height: 25px;
+  padding: 0 10px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.works__category {
+  color: #8695a4;
+  font-size: 20px;
+  margin: 0 0 0 25px;
+}
+
 .page {
   padding: 90px 0 0 0;
   -webkit-box-flex: 1;
@@ -1106,6 +1184,19 @@ body.ie ._ibg img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+
+  .works__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .works__body {
+    padding: 0 0 0 18px;
   }
 }
 
@@ -1318,5 +1409,32 @@ body.ie ._ibg img {
   .recent-post__info {
     font-size: 16px;
     margin: 0 0 10px 0;
+  }
+
+  .featured-works {
+    padding: 30px 0 30px 0;
+  }
+
+  .featured-works__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: auto;
+  }
+
+  .featured-works__items .works__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 90%;
+            flex: 0 0 90%;
+    margin: 0 15px 0 0;
+  }
+
+  .works__image {
+    margin: 0 0 17px 0;
+    padding: 0 0 60% 0;
+  }
+
+  .works__title {
+    font-size: 24px;
   }
 }
