@@ -84,9 +84,6 @@
 	@media (max-width: $md3+px) {
 		padding: 25px 0 23px 0;
 	}
-	// .recent-posts__container
-	&__container {
-	}
 	// .recent-posts__header
 	&__header {
 		display: flex;
@@ -119,9 +116,6 @@
 		flex: 0 1 50%;
 		padding: 0 10px;
 		margin: 0 0 17px 0;
-	}
-	// .recent-posts__item
-	&__item {
 	}
 }
 .recent-post {
