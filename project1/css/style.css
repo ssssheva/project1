@@ -2,6 +2,56 @@
 
 @import url("https://fonts.googleapis.com/css?family=Heebo:regular,500,700,900&display=swap");
 
+@font-face {
+  font-family: "icon";
+  font-display: swap;
+  src: url("../fonts/icon.woff") format("woff"), url("../fonts/icon.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "icons";
+  font-display: swap;
+  src: url("../fonts/icons.woff") format("woff"), url("../fonts/icons.woff2#icons") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="_icon-"]:before,
+[class*=" _icon-"]:before {
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="_icon-"]:before,
+[class*=" _icon-"]:before {
+  display: block;
+}
+
+._icon-fb:before {
+  content: "\e900";
+}
+
+._icon-insta:before {
+  content: "\e901";
+}
+
+._icon-linkedin:before {
+  content: "\e902";
+}
+
+._icon-twitter:before {
+  content: "\e903";
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -946,6 +996,15 @@ body.ie ._ibg img {
   display: none;
 }
 
+.footer {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.footer__social {
+  margin: 0 0 25px 0;
+}
+
 .hello {
   padding: 33px 0 70px 0;
 }
@@ -1169,6 +1228,27 @@ body.ie ._ibg img {
           flex: 1 1 auto;
 }
 
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social__item {
+  -webkit-transition: color 0.3s ease 0s;
+  -o-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
+  margin: 0 17px;
+  font-size: 30px;
+  color: inherit;
+}
+
 @media (min-width: 767.98px) {
   .menu__list {
     display: -webkit-box;
@@ -1211,6 +1291,10 @@ body.ie ._ibg img {
   }
 
   .recent-post__title:hover {
+    color: #ff6464;
+  }
+
+  .social__item:hover {
     color: #ff6464;
   }
 }
