@@ -1,0 +1,54 @@
+.article {
+	max-width: 700px;
+	padding: 0 10px 30px;
+	margin: 0 auto;
+	// .article__title
+	&__title {
+		font-size: 34px;
+		font-weight: 700;
+		line-height: 50 / 34 * 100%;
+		margin: 0 0 30px 0;
+		@media (max-width: $md3+px) {
+			font-size: 30px;
+		}
+	}
+	// .article__info
+	&__info {
+		display: flex;
+		margin: 0 0 20px 0;
+	}
+	// .article__year
+	&__year {
+		background: #ff7c7c;
+		border-radius: 16px;
+		height: 25px;
+		padding: 0 10px;
+		font-size: 19px;
+		font-weight: 900;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #fff;
+	}
+	// .article__category
+	&__category {
+		align-self: center;
+		font-size: 20px;
+		line-height: 25 / 20 * 100%;
+		margin: 0 0 0 25px;
+		@media (max-width: $md3+px) {
+			font-size: 18px;
+		}
+	}
+	// .article__text
+	&__text {
+		p {
+			@extend .text;
+			margin: 0 0 20px 0;
+		}
+		img {
+			max-width: 100%;
+			margin: 0 0 20px 0;
+		}
+	}
+}

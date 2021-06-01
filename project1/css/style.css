@@ -1059,7 +1059,8 @@ body.ie ._ibg img {
   line-height: 136.36364%;
 }
 
-.text {
+.text,
+.article__text p {
   font-size: 16px;
   line-height: 143.75%;
 }
@@ -1272,6 +1273,63 @@ body.ie ._ibg img {
 
 .blog__category {
   color: #8695a4;
+}
+
+.article {
+  max-width: 700px;
+  padding: 0 10px 30px;
+  margin: 0 auto;
+}
+
+.article__title {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 147.05882%;
+  margin: 0 0 30px 0;
+}
+
+.article__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 20px 0;
+}
+
+.article__year {
+  background: #ff7c7c;
+  border-radius: 16px;
+  height: 25px;
+  padding: 0 10px;
+  font-size: 19px;
+  font-weight: 900;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.article__category {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 20px;
+  line-height: 125%;
+  margin: 0 0 0 25px;
+}
+
+.article__text p {
+  margin: 0 0 20px 0;
+}
+
+.article__text img {
+  max-width: 100%;
+  margin: 0 0 20px 0;
 }
 
 .page {
@@ -1610,5 +1668,13 @@ body.ie ._ibg img {
 
   .blog__info {
     font-size: 16px;
+  }
+
+  .article__title {
+    font-size: 30px;
+  }
+
+  .article__category {
+    font-size: 18px;
   }
 }
